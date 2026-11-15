@@ -680,10 +680,21 @@
         }
 
         .quote-banner cite {
+            display: block;
             font-size: 0.85rem;
             color: var(--accent-cyan);
             font-style: normal;
             font-weight: 600;
+        }
+
+        .quote-banner .quote-reflection {
+            margin-top: 0.85rem;
+            padding-top: 0.85rem;
+            border-top: 1px solid var(--border-subtle);
+            font-size: var(--fs-body);
+            color: var(--text-secondary);
+            line-height: 1.65;
+            margin-bottom: 0;
         }
 
         /* Footer */
@@ -997,6 +1008,9 @@
                     “Jika kamu berbuat baik, maka kamu bisa memimpin. Jika kamu tidak membutuhkan orang lain maka kamu akan setara. Jika kamu membutuhkan seseorang, maka kamu akan menjadi budak.”
                 </blockquote>
                 <cite>— Sayyidina Ali bin Abi Thalib RA</cite>
+                <p class="quote-reflection">
+                    Prinsip inilah yang saya pegang sebagai manusia, praktisi di dunia kerja, maupun sebagai dosen. Dalam berkarya dan bekerja, saya berupaya memimpin lewat kebermanfaatan nyata serta menjaga kemandirian kompetensi maupun sistem agar selalu berdiri setara sebagai mitra yang merdeka, tanpa menggantungkan nasib pada pihak lain. Sebagai pendidik, nilai ini pula yang saya tanamkan kepada mahasiswa: jadilah pribadi yang berilmu, mandiri, dan memberi nilai tambah—bukan sekadar bergantung pada orang lain—agar kelak mereka mampu memimpin masa depannya sendiri dengan bermartabat.
+                </p>
             </div>
         </section>
 
@@ -1451,7 +1465,7 @@
 
             <div class="footer-bottom">
                 <span>&copy; <script>document.write(new Date().getFullYear())</script> Adi Muhamad Muhsidi. All rights reserved.</span>
-                <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; color: var(--accent-cyan);">Hosted on HomeServerAdi &bull; Cloudflare Zero Trust</span>
+                <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; color: var(--accent-cyan);">Hosted on Home Server &bull; Cloudflare Zero Trust</span>
             </div>
         </div>
     </footer>
