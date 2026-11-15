@@ -3,7 +3,7 @@
 ## 1. Identitas & Afiliasi
 - **Nama Lengkap & Gelar:** Adi Muhamad Muhsidi, S.SI., M.Kom.
 - **Username / Handle:** `adimhsd`
-- **Persona & Tagline Blog:** *"Dosen Sontoloyo"* — *"Secuil Catatan Dosen Sontoloyo"*
+- **Persona & Tagline Blog:** *"Dosen Sontoloyo"* — *"Catatan Dosen Sontoloyo"*
 - **Bio / Moto:**
   - *“A sontoloy human being, nothing more nothing less.”*
   - *“Whatever we do, people always have something to say.”*
@@ -32,8 +32,8 @@
 4. **Pelatihan Teknologi (`academy.pustakakarya.id`)**: Pelatihan Data Science, AI, Machine Learning, pemrograman, dan transformasi digital.
 
 ## 4. Bidang Keahlian & Mata Kuliah
-- **Bidang Keahlian:** Artificial Intelligence (LLM, RAG, AI Agent), Machine Learning, Data Mining, Big Data Analytics, Sistem Informasi Manajemen, Decision Support System (MOORA, MABAC), Enterprise Architecture (TOGAF ADM), Cloud & Self-Hosted Infrastructure.
-- **Mata Kuliah yang Diampu:** Machine Learning & AI, Big Data Analytics, Data Mining, Sistem Informasi Manajemen, Pemrograman Python, Pemrograman Aplikasi Mobile, FinTech, Pengembangan Sistem Informasi.
+- **Bidang Keahlian:** System Builder & Automation, Artificial Intelligence (LLM, RAG, AI Agents), Machine Learning & Data Mining, Big Data Analytics & Business Intelligence, Decision Support System (DSS), Cloud & Self-Hosted Infrastructure.
+- **Mata Kuliah yang Diampu:** Machine Learning & Artificial Intelligence, Big Data Analytics & Data Mining, Pemrograman Python, Pemrograman Aplikasi Mobile, Literasi Teknologi, Sistem Informasi Manajemen.
 
 ## 5. Hibah Penelitian (SINTA)
 1. **2026 (Penelitian Kompetitif Nasional / PFR - BIMA):** *Perancangan Sistem AI-Based Adaptive Learning untuk Personalisasi Bias Informasi dalam Penguatan Critical Digital Literacy (CDL) Guru* (Rp 140.400.000)
