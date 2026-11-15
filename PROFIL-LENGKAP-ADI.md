@@ -10,7 +10,7 @@
   - Kutipan Inspirasi (Sayyidina Ali bin Abi Thalib): *“Jika kamu berbuat baik, maka kamu bisa memimpin. Jika kamu tidak membutuhkan orang lain maka kamu akan setara. Jika kamu membutuhkan seseorang, maka kamu akan menjadi budak.”*
 - **Afiliasi Akademik:** Dosen Program Studi S1 Bisnis Digital, Fakultas Ekonomi dan Bisnis (FEB), Universitas Kuningan (UNIKU)
 - **Afiliasi Bisnis:** Pendiri & Pemilik **PT Digital Pustaka Karya Indonesia** (`https://pustakakarya-id.web.app/`)
-- **Lokasi:** Kertaungaran, Kec. Sindangagung, Kabupaten Kuningan, Jawa Barat 45573 ([Google Maps](https://maps.app.goo.gl/aHfunQAkNtnmvxba7))
+- **Lokasi:** Sindangagung, Kabupaten Kuningan, Jawa Barat 45573 ([Google Maps](https://maps.app.goo.gl/aHfunQAkNtnmvxba7))
 - **Kontak:** Email `adi.muhamad@uniku.ac.id` | Telepon / WhatsApp `085220621404`
 
 ## 2. Tautan Resmi & Profil Akademik
