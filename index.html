@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id" class="scroll-smooth">
+<html lang="id" class="scroll-smooth" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -43,7 +43,7 @@
     <link rel="apple-touch-icon" href="/avatar.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
     <style>
         /* ==========================================================================
            KONFIGURASI UKURAN TAMPILAN: DESKTOP vs HP/GADGET (Seperti di WordPress)
@@ -61,25 +61,45 @@
             --avatar-size: 240px;         /* Ukuran Foto Profil di Desktop */
             --section-pad: 1.6rem;        /* Jarak atas-bawah antar seksi di Desktop */
 
-            /* Palet Warna Mode Gelap (Dark Default) */
-            --bg-dark: #090d16;
-            --bg-surface: #111827;
-            --bg-navbar: rgba(9, 13, 22, 0.84);
-            --bg-card: rgba(17, 24, 39, 0.78);
-            --bg-card-hover: rgba(30, 41, 59, 0.92);
-            --bg-tag: rgba(255, 255, 255, 0.04);
-            --bg-quote: linear-gradient(135deg, rgba(30, 41, 59, 0.85), rgba(15, 23, 42, 0.95));
-            --border-subtle: rgba(255, 255, 255, 0.08);
-            --border-highlight: rgba(56, 189, 248, 0.35);
-            --text-primary: #f8fafc;
-            --text-secondary: #cbd5e1;
-            --text-muted: #94a3b8;
-            --accent-cyan: #38bdf8;
-            --accent-blue: #3b82f6;
-            --accent-indigo: #6366f1;
-            --accent-emerald: #10b981;
-            --accent-amber: #f59e0b;
-            --shadow-card: 0 10px 25px -5px rgba(0, 0, 0, 0.35);
+            /* Ubuntu Brand & Accent */
+            --color-primary: #e95420;
+            --color-primary-hover: #d44615;
+            --color-primary-active: #c03d10;
+            --color-aubergine: #77216f;
+            --color-aubergine-mid: #5e2750;
+            --color-aubergine-dark: #2c001e;
+            --focus-ring: rgba(233, 84, 32, 0.35);
+
+            /* Light Mode Surfaces (Yaru Light) */
+            --bg-base: #fafafa;
+            --bg-dark: #fafafa;
+            --bg-surface: #ffffff;
+            --bg-elevated: #f2f2f2;
+            --bg-hover: #eaeaea;
+            --bg-navbar: rgba(242, 242, 242, 0.9);
+            --bg-card: #ffffff;
+            --bg-card-hover: #eaeaea;
+            --bg-tag: #f2f2f2;
+            --bg-quote: linear-gradient(135deg, rgba(233, 84, 32, 0.07), rgba(119, 33, 111, 0.08));
+
+            /* Light Mode Typography & Borders */
+            --text-primary: #111111;
+            --text-secondary: #3d3d3d;
+            --text-muted: #5e5e5e;
+            --text-disabled: #999999;
+            --border-subtle: #dcdcdc;
+            --border-highlight: rgba(233, 84, 32, 0.5);
+            --shadow-card: 0 2px 6px rgba(0, 0, 0, 0.06);
+
+            /* Semantic & Mapped Accent Tokens (Light) */
+            --accent-cyan: #e95420;
+            --accent-blue: #e95420;
+            --accent-indigo: #77216f;
+            --accent-emerald: #0e8420;
+            --accent-amber: #e99b00;
+            --accent-danger: #c7162b;
+            --accent-info: #19b6ee;
+            --badge-aubergine-text: #77216f;
         }
 
         /* 2. Pengaturan Ukuran Tampilan HP / GADGET (Layar <= 768px) */
@@ -97,25 +117,37 @@
             }
         }
 
-        [data-theme="light"] {
-            --bg-dark: #f8fafc;
-            --bg-surface: #ffffff;
-            --bg-navbar: rgba(255, 255, 255, 0.88);
-            --bg-card: rgba(255, 255, 255, 0.92);
-            --bg-card-hover: #ffffff;
-            --bg-tag: #f1f5f9;
-            --bg-quote: linear-gradient(135deg, #eff6ff, #eef2ff);
-            --border-subtle: #e2e8f0;
-            --border-highlight: #0284c7;
-            --text-primary: #0f172a;
-            --text-secondary: #334155;
-            --text-muted: #64748b;
-            --accent-cyan: #0284c7;
-            --accent-blue: #2563eb;
-            --accent-indigo: #4f46e5;
-            --accent-emerald: #059669;
-            --accent-amber: #d97706;
-            --shadow-card: 0 10px 25px -5px rgba(15, 23, 42, 0.07);
+        [data-theme="dark"] {
+            /* Dark Mode Surfaces (Warm Dark Grey khas Yaru) */
+            --bg-base: #1e1e1e;
+            --bg-dark: #1e1e1e;
+            --bg-surface: #2c2c2c;
+            --bg-elevated: #242424;
+            --bg-hover: #363636;
+            --bg-navbar: rgba(36, 36, 36, 0.9);
+            --bg-card: #2c2c2c;
+            --bg-card-hover: #363636;
+            --bg-tag: #242424;
+            --bg-quote: linear-gradient(135deg, rgba(119, 33, 111, 0.24), rgba(44, 0, 30, 0.55));
+
+            /* Dark Mode Typography & Borders */
+            --text-primary: #f7f7f7;
+            --text-secondary: #d4d4d4;
+            --text-muted: #b0b0b0;
+            --text-disabled: #6e6e6e;
+            --border-subtle: #3d3d3d;
+            --border-highlight: rgba(233, 84, 32, 0.55);
+            --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.35);
+
+            /* Semantic & Mapped Accent Tokens (Dark) */
+            --accent-cyan: #e95420;
+            --accent-blue: #e95420;
+            --accent-indigo: #77216f;
+            --accent-emerald: #26a269;
+            --accent-amber: #f5c211;
+            --accent-danger: #e01b24;
+            --accent-info: #3584e4;
+            --badge-aubergine-text: #e49ce0;
         }
 
         * {
@@ -125,12 +157,12 @@
         }
 
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            background-color: var(--bg-dark);
+            font-family: 'Ubuntu', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--bg-base);
             background-image:
-                radial-gradient(circle at 10% 10%, rgba(56, 189, 248, 0.1), transparent 35%),
-                radial-gradient(circle at 90% 25%, rgba(99, 102, 241, 0.1), transparent 35%),
-                radial-gradient(circle at 50% 85%, rgba(16, 185, 129, 0.06), transparent 40%);
+                radial-gradient(circle at 10% 10%, rgba(233, 84, 32, 0.08), transparent 35%),
+                radial-gradient(circle at 90% 25%, rgba(119, 33, 111, 0.1), transparent 35%),
+                radial-gradient(circle at 50% 85%, rgba(44, 0, 30, 0.08), transparent 40%);
             color: var(--text-primary);
             line-height: 1.5;
             overflow-x: hidden;
@@ -224,7 +256,7 @@
             border: 1px solid var(--border-subtle);
             background: var(--bg-card);
             color: var(--text-primary);
-            font-family: 'Inter', sans-serif;
+            font-family: 'Ubuntu', sans-serif;
             font-size: 0.8rem;
             font-weight: 600;
             cursor: pointer;
@@ -262,7 +294,7 @@
             position: absolute;
             inset: -6px;
             border-radius: 28px;
-            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-indigo), var(--accent-emerald));
+            background: linear-gradient(135deg, var(--color-primary), var(--color-aubergine), var(--color-aubergine-dark));
             opacity: 0.75;
             filter: blur(8px);
             z-index: 0;
@@ -286,9 +318,9 @@
             transform: translateX(-50%);
             z-index: 2;
             white-space: nowrap;
-            background: #0f172a;
-            border: 1px solid rgba(16, 185, 129, 0.4);
-            color: #34d399;
+            background: #242424;
+            border: 1px solid rgba(38, 162, 105, 0.45);
+            color: #26a269;
             font-size: 0.75rem;
             font-weight: 600;
             padding: 0.35rem 0.85rem;
@@ -303,7 +335,7 @@
             width: 7px;
             height: 7px;
             border-radius: 50%;
-            background: #10b981;
+            background: #26a269;
             animation: pulse 2s infinite;
         }
 
@@ -316,11 +348,11 @@
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
-            font-family: 'JetBrains Mono', monospace;
+            font-family: 'Ubuntu Mono', monospace;
             font-size: 0.8rem;
-            color: var(--accent-cyan);
-            background: rgba(56, 189, 248, 0.1);
-            border: 1px solid rgba(56, 189, 248, 0.25);
+            color: var(--color-primary);
+            background: rgba(233, 84, 32, 0.12);
+            border: 1px solid rgba(233, 84, 32, 0.32);
             padding: 0.3rem 0.8rem;
             border-radius: 999px;
             margin-bottom: 0.65rem;
@@ -370,7 +402,7 @@
             font-style: italic;
             color: var(--text-muted);
             font-size: 0.92rem;
-            border-left: 3px solid var(--accent-indigo);
+            border-left: 3px solid var(--color-aubergine);
             padding-left: 0.85rem;
             margin-bottom: 0.85rem;
         }
@@ -393,7 +425,7 @@
             align-items: center;
             gap: 0.5rem;
             padding: 0.65rem 1.2rem;
-            border-radius: 10px;
+            border-radius: 8px;
             font-size: 0.875rem;
             font-weight: 600;
             border: 1px solid var(--border-subtle);
@@ -409,15 +441,19 @@
         }
 
         .btn-primary {
-            background: linear-gradient(135deg, var(--accent-blue), var(--accent-indigo));
+            background: var(--color-primary);
             border-color: transparent;
             color: #fff;
-            box-shadow: 0 8px 20px -4px rgba(59, 130, 246, 0.45);
+            box-shadow: 0 6px 16px -4px rgba(233, 84, 32, 0.45);
         }
 
         .btn-primary:hover {
-            background: linear-gradient(135deg, #2563eb, #4f46e5);
+            background: var(--color-primary-hover);
             border-color: transparent;
+        }
+
+        .btn-primary:active {
+            background: var(--color-primary-active);
         }
 
         /* Stats Grid */
@@ -434,6 +470,7 @@
             border-radius: 12px;
             padding: 0.9rem 0.75rem;
             text-align: center;
+            box-shadow: var(--shadow-card);
             backdrop-filter: blur(12px);
         }
 
@@ -467,7 +504,7 @@
         }
 
         .section-eyebrow {
-            font-family: 'JetBrains Mono', monospace;
+            font-family: 'Ubuntu Mono', monospace;
             font-size: 0.75rem;
             text-transform: uppercase;
             letter-spacing: 0.1em;
@@ -511,8 +548,9 @@
         .card {
             background: var(--bg-card);
             border: 1px solid var(--border-subtle);
-            border-radius: 14px;
+            border-radius: 12px;
             padding: 1.25rem;
+            box-shadow: var(--shadow-card);
             transition: all 0.22s ease;
             display: flex;
             flex-direction: column;
@@ -527,7 +565,7 @@
 
         .card-badge {
             display: inline-block;
-            font-family: 'JetBrains Mono', monospace;
+            font-family: 'Ubuntu Mono', monospace;
             font-size: 0.72rem;
             font-weight: 600;
             padding: 0.2rem 0.65rem;
@@ -536,10 +574,10 @@
             width: fit-content;
         }
 
-        .badge-cyan { background: rgba(56, 189, 248, 0.12); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.3); }
-        .badge-indigo { background: rgba(99, 102, 241, 0.14); color: #818cf8; border: 1px solid rgba(99, 102, 241, 0.3); }
-        .badge-emerald { background: rgba(16, 185, 129, 0.12); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.3); }
-        .badge-amber { background: rgba(245, 158, 11, 0.12); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.3); }
+        .badge-cyan { background: rgba(233, 84, 32, 0.12); color: var(--color-primary); border: 1px solid rgba(233, 84, 32, 0.32); }
+        .badge-indigo { background: rgba(119, 33, 111, 0.14); color: var(--badge-aubergine-text); border: 1px solid rgba(119, 33, 111, 0.35); }
+        .badge-emerald { background: rgba(38, 162, 105, 0.12); color: var(--accent-emerald); border: 1px solid rgba(38, 162, 105, 0.32); }
+        .badge-amber { background: rgba(233, 155, 0, 0.12); color: var(--accent-amber); border: 1px solid rgba(233, 155, 0, 0.32); }
 
         .card h3 {
             font-size: var(--fs-card-title);
@@ -601,7 +639,7 @@
 
         .tab-btn {
             padding: 0.55rem 1.1rem;
-            border-radius: 10px;
+            border-radius: 8px;
             font-size: 0.85rem;
             font-weight: 600;
             background: var(--bg-card);
@@ -612,8 +650,8 @@
         }
 
         .tab-btn.active, .tab-btn:hover {
-            background: rgba(56, 189, 248, 0.14);
-            border-color: var(--accent-cyan);
+            background: rgba(233, 84, 32, 0.14);
+            border-color: var(--color-primary);
             color: var(--text-primary);
         }
 
@@ -629,6 +667,7 @@
             border: 1px solid var(--border-subtle);
             border-radius: 12px;
             padding: 1.15rem 1.35rem;
+            box-shadow: var(--shadow-card);
             display: flex;
             align-items: flex-start;
             justify-content: space-between;
@@ -654,7 +693,7 @@
         }
 
         .pub-year {
-            font-family: 'JetBrains Mono', monospace;
+            font-family: 'Ubuntu Mono', monospace;
             font-size: 0.78rem;
             font-weight: 600;
             padding: 0.25rem 0.65rem;
@@ -667,8 +706,9 @@
         /* Quote Box */
         .quote-banner {
             background: var(--bg-quote);
-            border: 1px solid rgba(99, 102, 241, 0.3);
-            border-radius: 14px;
+            border: 1px solid rgba(119, 33, 111, 0.35);
+            border-radius: 12px;
+            box-shadow: var(--shadow-card);
             padding: 1.35rem 1.6rem;
             margin: 1.1rem 0 0;
             position: relative;
@@ -758,7 +798,7 @@
         }
 
         .contact-card-label {
-            font-family: 'JetBrains Mono', monospace;
+            font-family: 'Ubuntu Mono', monospace;
             font-size: 0.68rem;
             font-weight: 600;
             text-transform: uppercase;
@@ -1075,7 +1115,7 @@
                     <div>
                         <span class="card-badge badge-cyan">🎨 FRONTEND</span>
                         <h3>Frontend</h3>
-                        <div style="font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; color: var(--accent-cyan); font-weight: 600; margin-bottom: 0.45rem;">HTML, CSS, JavaScript</div>
+                        <div style="font-family: 'Ubuntu Mono', monospace; font-size: 0.78rem; color: var(--accent-cyan); font-weight: 600; margin-bottom: 0.45rem;">HTML, CSS, JavaScript</div>
                         <p style="margin-bottom: 0;">
                             Membangun antarmuka yang bersih, ringan, dan mudah diakses tanpa kompleksitas yang tidak perlu.
                         </p>
@@ -1086,7 +1126,7 @@
                     <div>
                         <span class="card-badge badge-indigo">🛠️ BACKEND</span>
                         <h3>Backend</h3>
-                        <div style="font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; color: var(--accent-cyan); font-weight: 600; margin-bottom: 0.45rem;">Firebase, Node.js (basic)</div>
+                        <div style="font-family: 'Ubuntu Mono', monospace; font-size: 0.78rem; color: var(--accent-cyan); font-weight: 600; margin-bottom: 0.45rem;">Firebase, Node.js (basic)</div>
                         <p style="margin-bottom: 0;">
                             Backend sederhana yang mudah dirawat, cepat dikembangkan, dan cukup kuat untuk kebutuhan sistem skala kecil hingga menengah.
                         </p>
@@ -1097,7 +1137,7 @@
                     <div>
                         <span class="card-badge badge-emerald">📊 DATA &amp; ANALYTICS</span>
                         <h3>Data &amp; Analytics</h3>
-                        <div style="font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; color: var(--accent-cyan); font-weight: 600; margin-bottom: 0.45rem;">Python, Pandas, Matplotlib</div>
+                        <div style="font-family: 'Ubuntu Mono', monospace; font-size: 0.78rem; color: var(--accent-cyan); font-weight: 600; margin-bottom: 0.45rem;">Python, Pandas, Matplotlib</div>
                         <p style="margin-bottom: 0;">
                             Mengolah, membersihkan, dan memvisualisasikan data sebagai fondasi analisis sebelum masuk ke dashboard atau model lanjutan.
                         </p>
@@ -1108,7 +1148,7 @@
                     <div>
                         <span class="card-badge badge-amber">🤖 AI &amp; AUTOMATION</span>
                         <h3>AI &amp; Automation</h3>
-                        <div style="font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; color: var(--accent-cyan); font-weight: 600; margin-bottom: 0.45rem;">Machine Learning (dasar), LLM APIs, n8n</div>
+                        <div style="font-family: 'Ubuntu Mono', monospace; font-size: 0.78rem; color: var(--accent-cyan); font-weight: 600; margin-bottom: 0.45rem;">Machine Learning (dasar), LLM APIs, n8n</div>
                         <p style="margin-bottom: 0;">
                             Mengembangkan fitur AI yang fokus pada kebutuhan nyata otomatisasi dan pengambilan keputusan, bukan pipeline yang ribet.
                         </p>
@@ -1119,7 +1159,7 @@
                     <div>
                         <span class="card-badge badge-cyan">🧰 DEV TOOLS</span>
                         <h3>Development Tools</h3>
-                        <div style="font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; color: var(--accent-cyan); font-weight: 600; margin-bottom: 0.45rem;">GitHub, Google Colab, Firebase Hosting</div>
+                        <div style="font-family: 'Ubuntu Mono', monospace; font-size: 0.78rem; color: var(--accent-cyan); font-weight: 600; margin-bottom: 0.45rem;">GitHub, Google Colab, Firebase Hosting</div>
                         <p style="margin-bottom: 0;">
                             Mendukung eksperimen cepat, iterasi singkat, dan deployment yang simpel serta efisien.
                         </p>
@@ -1130,7 +1170,7 @@
                     <div>
                         <span class="card-badge badge-indigo">☁️ CLOUD &amp; INFRA</span>
                         <h3>Cloud &amp; Infrastructure</h3>
-                        <div style="font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; color: var(--accent-cyan); font-weight: 600; margin-bottom: 0.45rem;">DigitalOcean, Linux Server, VPS</div>
+                        <div style="font-family: 'Ubuntu Mono', monospace; font-size: 0.78rem; color: var(--accent-cyan); font-weight: 600; margin-bottom: 0.45rem;">DigitalOcean, Linux Server, VPS</div>
                         <p style="margin-bottom: 0;">
                             Lingkungan server yang fleksibel untuk belajar, bereksperimen, dan menjalankan sistem secara mandiri.
                         </p>
@@ -1484,7 +1524,7 @@
                 <div class="contact-card-grid">
                     <a href="mailto:adi.muhamad@uniku.ac.id" class="contact-card">
                         <div class="contact-icon-wrap">
-                            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#38BDF8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#E95420" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                                 <rect x="2" y="4" width="20" height="16" rx="2"/>
                                 <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
                             </svg>
@@ -1543,7 +1583,7 @@
 
             <div class="footer-bottom">
                 <span>&copy; <script>document.write(new Date().getFullYear())</script> Adi Muhamad Muhsidi. All rights reserved.</span>
-                <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; color: var(--accent-cyan);">Hosted on Home Server &bull; Cloudflare Zero Trust</span>
+                <span style="font-family: 'Ubuntu Mono', monospace; font-size: 0.78rem; color: var(--accent-cyan);">Hosted on Home Server &bull; Cloudflare Zero Trust</span>
             </div>
         </div>
     </footer>
@@ -1553,12 +1593,12 @@
             const root = document.documentElement;
             const icon = document.getElementById('theme-icon');
             const label = document.getElementById('theme-label');
-            if (theme === 'light') {
-                root.setAttribute('data-theme', 'light');
+            const resolved = theme === 'light' ? 'light' : 'dark';
+            root.setAttribute('data-theme', resolved);
+            if (resolved === 'light') {
                 if (icon) icon.textContent = '🌙';
                 if (label) label.textContent = 'Dark';
             } else {
-                root.removeAttribute('data-theme');
                 if (icon) icon.textContent = '☀️';
                 if (label) label.textContent = 'Light';
             }
