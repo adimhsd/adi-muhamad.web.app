@@ -11,6 +11,7 @@ export default function BusinessEcosystem() {
     mainDomainLabel,
     descriptionSuffix,
     units,
+    partnerVenture,
   } = businessSection;
 
   return (
@@ -63,6 +64,38 @@ export default function BusinessEcosystem() {
           </div>
         ))}
       </div>
+
+      {partnerVenture && (
+        <div className="mt-3.5 bg-[var(--bg-card)] border border-[var(--border-subtle)] hover:border-[var(--border-highlight)] rounded-xl p-4 md:p-5 shadow-[var(--shadow-card)] transition-colors flex flex-col md:flex-row md:items-center justify-between gap-3">
+          <div>
+            <Badge variant={partnerVenture.badgeVariant}>{partnerVenture.badge}</Badge>
+            <h3 className="text-[length:var(--fs-card-title)] font-bold text-[var(--text-primary)] mb-1">
+              {partnerVenture.title}
+            </h3>
+            <p className="text-[length:var(--fs-body)] text-[var(--text-muted)] leading-relaxed">
+              {partnerVenture.description}
+            </p>
+          </div>
+          <div className="flex flex-wrap items-center gap-3 shrink-0">
+            <a
+              href={partnerVenture.platformUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-xs md:text-sm font-semibold bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white transition-colors"
+            >
+              {partnerVenture.platformLabel} &rarr;
+            </a>
+            <a
+              href={partnerVenture.foundersUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-xs md:text-sm font-semibold border border-[var(--border-subtle)] bg-[var(--bg-tag)] text-[var(--text-primary)] hover:border-[var(--border-highlight)] transition-colors"
+            >
+              {partnerVenture.foundersLabel} &rarr;
+            </a>
+          </div>
+        </div>
+      )}
     </section>
   );
 }

@@ -16,7 +16,8 @@ export const profileData = {
   avatarFallback: 'https://avatars.githubusercontent.com/u/59553339?v=4',
   roles: [
     { prefix: 'Lecture S1 Bisnis Digital', highlight: 'Universitas Kuningan' },
-    { prefix: 'Founder', highlight: 'PT Digital Pustaka Karya Indonesia' },
+    { prefix: 'Founder', highlight: 'PT Digital Pustaka Karya Indonesia', href: 'https://pustakakarya-id.web.app/' },
+    { prefix: 'Founder', highlight: 'Peta Trader (peta-trader.id)', href: 'https://peta-trader.id/founders' },
   ],
   heroQuote:
     '"Just a sontoloyo human being - nothing more, nothing less. No matter what you do, people will always have something to say."',
@@ -118,6 +119,8 @@ export const contactData = {
     { label: 'Exam AI', href: 'https://exam.adi-muhamad.my.id/' },
     { label: 'CDL Adaptive AI', href: 'https://cdl.adi-muhamad.my.id/' },
     { label: 'Pustaka Karya', href: 'https://pustakakarya-id.web.app/' },
+    { label: 'Peta Trader', href: 'https://peta-trader.id/' },
+    { label: 'Founders Peta Trader', href: 'https://peta-trader.id/founders' },
     { label: 'GitHub', href: 'https://github.com/adimhsd' },
     { label: 'Google Scholar', href: 'https://scholar.google.com/citations?user=xc8MNfoAAAAJ&hl=id' },
     { label: 'SINTA', href: 'https://sinta.kemdiktisaintek.go.id/authors/profile/6768934' },

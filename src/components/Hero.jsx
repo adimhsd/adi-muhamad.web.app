@@ -82,7 +82,18 @@ export default function Hero() {
               >
                 <div>
                   {role.prefix}{' '}
-                  <span className="text-[var(--accent-cyan)] font-semibold">{role.highlight}</span>
+                  {role.href ? (
+                    <a
+                      href={role.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[var(--accent-cyan)] font-semibold hover:underline"
+                    >
+                      {role.highlight}
+                    </a>
+                  ) : (
+                    <span className="text-[var(--accent-cyan)] font-semibold">{role.highlight}</span>
+                  )}
                 </div>
               </li>
             ))}
