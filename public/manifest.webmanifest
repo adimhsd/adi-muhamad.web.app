@@ -1,0 +1,26 @@
+{
+  "name": "Adi Muhamad Muhsidi, S.SI., M.Kom.",
+  "short_name": "Adi Muhamad",
+  "description": "Landing Page Profesional, CV Digital, dan Portofolio Akademik × Teknologi Adi Muhamad Muhsidi, S.SI., M.Kom.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#1e1e1e",
+  "theme_color": "#e95420",
+  "lang": "id",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

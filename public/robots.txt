@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
 
+Sitemap: https://adi-muhamad.my.id/sitemap.xml
