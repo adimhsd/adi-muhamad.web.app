@@ -56,7 +56,5 @@ export const businessSection = {
       'Salah satu founder dari platform Peta Trader (peta-trader.id). Terlibat dalam membangun visi produk dan ekosistem platform digital tersebut.',
     platformUrl: 'https://peta-trader.id/',
     platformLabel: 'Akses Platform peta-trader.id',
-    foundersUrl: 'https://peta-trader.id/founders',
-    foundersLabel: 'Lihat Halaman Founders',
   },
 };

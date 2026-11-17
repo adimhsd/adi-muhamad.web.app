@@ -57,9 +57,9 @@ export default function BusinessEcosystem() {
               href={unit.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-xs md:text-sm font-semibold text-[var(--accent-cyan)] hover:underline"
+              className="inline-flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white transition-colors self-start"
             >
-              {mainDomainLabel} &rarr;
+              Akses Pustaka Karya ID
             </a>
           </div>
         ))}
@@ -84,14 +84,6 @@ export default function BusinessEcosystem() {
               className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-xs md:text-sm font-semibold bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white transition-colors"
             >
               {partnerVenture.platformLabel} &rarr;
-            </a>
-            <a
-              href={partnerVenture.foundersUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-xs md:text-sm font-semibold border border-[var(--border-subtle)] bg-[var(--bg-tag)] text-[var(--text-primary)] hover:border-[var(--border-highlight)] transition-colors"
-            >
-              {partnerVenture.foundersLabel} &rarr;
             </a>
           </div>
         </div>
