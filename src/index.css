@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Responsive Typography & Layout Tokens (Desktop) */
+  --fs-hero-name: 1.75rem;
+  --fs-hero-role: 1.05rem;
+  --fs-hero-bio: 0.96rem;
+  --fs-section-title: 1.65rem;
+  --fs-card-title: 1.08rem;
+  --fs-body: 0.9rem;
+  --fs-stat-val: 1.6rem;
+  --avatar-size: 230px;
+  --section-pad: 1.35rem;
+
+  /* Ubuntu Brand & Accent */
+  --color-primary: #e95420;
+  --color-primary-hover: #d44615;
+  --color-primary-active: #c03d10;
+  --color-aubergine: #77216f;
+  --color-aubergine-mid: #5e2750;
+  --color-aubergine-dark: #2c001e;
+  --focus-ring: rgba(233, 84, 32, 0.35);
+
+  /* Light Mode Surfaces (Yaru Light) */
+  --bg-base: #fafafa;
+  --bg-surface: #ffffff;
+  --bg-elevated: #f2f2f2;
+  --bg-hover: #eaeaea;
+  --bg-navbar: rgba(242, 242, 242, 0.9);
+  --bg-card: #ffffff;
+  --bg-card-hover: #eaeaea;
+  --bg-tag: #f2f2f2;
+  --bg-quote: linear-gradient(135deg, rgba(233, 84, 32, 0.07), rgba(119, 33, 111, 0.08));
+
+  /* Light Mode Typography & Borders */
+  --text-primary: #111111;
+  --text-secondary: #3d3d3d;
+  --text-muted: #5e5e5e;
+  --text-disabled: #999999;
+  --border-subtle: #dcdcdc;
+  --border-highlight: rgba(233, 84, 32, 0.5);
+  --shadow-card: 0 2px 6px rgba(0, 0, 0, 0.06);
+
+  /* Semantic & Mapped Accent Tokens (Light) */
+  --accent-cyan: #e95420;
+  --accent-indigo: #77216f;
+  --accent-emerald: #0e8420;
+  --accent-amber: #e99b00;
+  --badge-aubergine-text: #77216f;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --fs-hero-name: 1.12rem;
+    --fs-hero-role: 0.8rem;
+    --fs-hero-bio: 0.78rem;
+    --fs-section-title: 1.12rem;
+    --fs-card-title: 0.9rem;
+    --fs-body: 0.76rem;
+    --fs-stat-val: 1.15rem;
+    --avatar-size: 145px;
+    --section-pad: 0.95rem;
+  }
+}
+
+html.dark,
+[data-theme='dark'] {
+  /* Dark Mode Surfaces (Warm Dark Grey khas Yaru) */
+  --bg-base: #1e1e1e;
+  --bg-surface: #2c2c2c;
+  --bg-elevated: #242424;
+  --bg-hover: #363636;
+  --bg-navbar: rgba(36, 36, 36, 0.9);
+  --bg-card: #2c2c2c;
+  --bg-card-hover: #363636;
+  --bg-tag: #242424;
+  --bg-quote: linear-gradient(135deg, rgba(119, 33, 111, 0.24), rgba(44, 0, 30, 0.55));
+
+  /* Dark Mode Typography & Borders */
+  --text-primary: #f7f7f7;
+  --text-secondary: #d4d4d4;
+  --text-muted: #b0b0b0;
+  --text-disabled: #6e6e6e;
+  --border-subtle: #3d3d3d;
+  --border-highlight: rgba(233, 84, 32, 0.55);
+  --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.35);
+
+  /* Semantic & Mapped Accent Tokens (Dark) */
+  --accent-cyan: #e95420;
+  --accent-indigo: #77216f;
+  --accent-emerald: #26a269;
+  --accent-amber: #f5c211;
+  --badge-aubergine-text: #e49ce0;
+}
+
+@layer base {
+  body {
+    font-family: 'Ubuntu', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: var(--bg-base);
+    background-image:
+      radial-gradient(circle at 10% 10%, rgba(233, 84, 32, 0.08), transparent 35%),
+      radial-gradient(circle at 90% 25%, rgba(119, 33, 111, 0.1), transparent 35%),
+      radial-gradient(circle at 50% 85%, rgba(44, 0, 30, 0.08), transparent 40%);
+    color: var(--text-primary);
+    line-height: 1.5;
+    overflow-x: hidden;
+    transition: background-color 0.25s ease, color 0.25s ease;
+  }
+}
+
+@keyframes status-pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.4;
+    transform: scale(1.25);
+  }
+}
+
+.status-dot-pulse {
+  animation: status-pulse 2s infinite;
+}
