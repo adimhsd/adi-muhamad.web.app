@@ -108,6 +108,11 @@ html.dark,
     overflow-x: hidden;
     transition: background-color 0.25s ease, color 0.25s ease;
   }
+
+  section[id],
+  footer[id] {
+    scroll-margin-top: 4.5rem;
+  }
 }
 
 @keyframes status-pulse {

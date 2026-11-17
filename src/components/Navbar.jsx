@@ -3,27 +3,46 @@ import { navLinks, profileData } from '../data/profile';
 export default function Navbar({ theme, onToggleTheme }) {
   const isLight = theme === 'light';
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    if (window.location.hash) {
+      window.history.replaceState(null, '', window.location.pathname + window.location.search);
+    }
+  };
+
+  const scrollToSection = (href) => {
+    const target = document.querySelector(href);
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+    if (window.location.hash) {
+      window.history.replaceState(null, '', window.location.pathname + window.location.search);
+    }
+  };
+
   return (
     <header className="sticky top-0 z-50 bg-[var(--bg-navbar)] backdrop-blur-md border-b border-[var(--border-subtle)] transition-colors duration-200">
       <div className="max-w-[1140px] mx-auto px-4 md:px-6 flex items-center justify-between h-14 md:h-[64px]">
-        <a
-          href="#"
-          className="flex items-center gap-2.5 font-bold text-[0.9rem] md:text-base tracking-tight whitespace-nowrap shrink-0 text-[var(--text-primary)]"
+        <button
+          type="button"
+          onClick={scrollToTop}
+          className="flex items-center gap-2.5 font-bold text-[0.9rem] md:text-base tracking-tight whitespace-nowrap shrink-0 text-[var(--text-primary)] bg-transparent border-0 cursor-pointer p-0"
         >
           <span className="w-2.5 h-2.5 rounded-full bg-[var(--accent-cyan)] shadow-[0_0_12px_var(--accent-cyan)] shrink-0" />
           <span>{profileData.brandName}</span>
-        </a>
+        </button>
 
         <div className="flex items-center gap-3">
           <nav className="hidden lg:flex items-center gap-1 text-[0.84rem] font-medium text-[var(--text-secondary)]">
             {navLinks.map((link) => (
-              <a
+              <button
                 key={link.href}
-                href={link.href}
-                className="whitespace-nowrap px-3 py-1.5 rounded-lg transition-colors hover:text-[var(--accent-cyan)] hover:bg-[var(--bg-tag)]"
+                type="button"
+                onClick={() => scrollToSection(link.href)}
+                className="whitespace-nowrap px-3 py-1.5 rounded-lg transition-colors hover:text-[var(--accent-cyan)] hover:bg-[var(--bg-tag)] bg-transparent border-0 cursor-pointer font-medium text-[0.84rem] text-[var(--text-secondary)]"
               >
                 {link.label}
-              </a>
+              </button>
             ))}
           </nav>
 
