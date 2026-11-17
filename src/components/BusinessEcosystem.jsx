@@ -42,13 +42,13 @@ export default function BusinessEcosystem() {
           >
             <div>
               <Badge variant={unit.badgeVariant}>{unit.badge}</Badge>
-              <h3 className="text-[var(--fs-card-title)] font-bold text-[var(--text-primary)] mb-1">
+              <h3 className="text-[length:var(--fs-card-title)] font-bold text-[var(--text-primary)] mb-1">
                 {unit.title}
               </h3>
               <div className="font-mono text-[0.7rem] text-[var(--text-muted)] mb-2">
                 {unit.subdomain}
               </div>
-              <p className="text-[var(--fs-body)] text-[var(--text-muted)] leading-relaxed mb-3">
+              <p className="text-[length:var(--fs-body)] text-[var(--text-muted)] leading-relaxed mb-3">
                 {unit.description}
               </p>
             </div>

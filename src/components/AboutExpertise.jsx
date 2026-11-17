@@ -16,10 +16,10 @@ export default function AboutExpertise() {
             className="bg-[var(--bg-card)] border border-[var(--border-subtle)] hover:border-[var(--border-highlight)] rounded-xl p-4 md:p-5 shadow-[var(--shadow-card)] transition-colors"
           >
             <Badge variant={card.badgeVariant}>{card.badge}</Badge>
-            <h3 className="text-[var(--fs-card-title)] font-bold text-[var(--text-primary)] mb-1.5">
+            <h3 className="text-[length:var(--fs-card-title)] font-bold text-[var(--text-primary)] mb-1.5">
               {card.title}
             </h3>
-            <p className="text-[var(--fs-body)] text-[var(--text-muted)] leading-relaxed mb-3">
+            <p className="text-[length:var(--fs-body)] text-[var(--text-muted)] leading-relaxed mb-3">
               {card.description}
             </p>
             <div className="flex flex-wrap gap-1.5">
@@ -43,7 +43,7 @@ export default function AboutExpertise() {
         <cite className="block not-italic font-mono text-[0.74rem] md:text-xs font-semibold text-[var(--accent-cyan)] mb-2">
           {quoteBanner.attribution}
         </cite>
-        <p className="text-[var(--fs-body)] text-[var(--text-secondary)] leading-relaxed">
+        <p className="text-[length:var(--fs-body)] text-[var(--text-secondary)] leading-relaxed">
           {quoteBanner.reflection}
         </p>
       </div>

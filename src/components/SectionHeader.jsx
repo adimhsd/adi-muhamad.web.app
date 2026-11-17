@@ -4,7 +4,7 @@ export default function SectionHeader({ eyebrow, title, subtitle, description })
       <div className="font-mono text-[0.66rem] md:text-xs uppercase tracking-widest text-[var(--accent-cyan)] mb-1">
         {eyebrow}
       </div>
-      <h2 className="text-[var(--fs-section-title)] font-extrabold tracking-tight leading-tight text-[var(--text-primary)]">
+      <h2 className="text-[length:var(--fs-section-title)] font-extrabold tracking-tight leading-tight text-[var(--text-primary)]">
         {title}
       </h2>
       {subtitle && (

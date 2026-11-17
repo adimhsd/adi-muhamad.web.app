@@ -21,13 +21,13 @@ export default function TechStack() {
             className="bg-[var(--bg-card)] border border-[var(--border-subtle)] hover:border-[var(--border-highlight)] rounded-xl p-4 md:p-5 shadow-[var(--shadow-card)] transition-colors"
           >
             <Badge variant={item.badgeVariant}>{item.badge}</Badge>
-            <h3 className="text-[var(--fs-card-title)] font-bold text-[var(--text-primary)] mb-1">
+            <h3 className="text-[length:var(--fs-card-title)] font-bold text-[var(--text-primary)] mb-1">
               {item.title}
             </h3>
-            <div className="font-mono text-xs text-[var(--accent-cyan)] font-semibold mb-1.5">
+            <div className="font-mono text-[0.72rem] md:text-xs text-[var(--accent-cyan)] font-semibold mb-1.5">
               {item.tools}
             </div>
-            <p className="text-[var(--fs-body)] text-[var(--text-muted)] leading-relaxed">
+            <p className="text-[length:var(--fs-body)] text-[var(--text-muted)] leading-relaxed">
               {item.description}
             </p>
           </div>

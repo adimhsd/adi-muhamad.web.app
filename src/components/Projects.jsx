@@ -17,10 +17,10 @@ export default function Projects() {
           >
             <div>
               <Badge variant={project.badgeVariant}>{project.badge}</Badge>
-              <h3 className="text-[var(--fs-card-title)] font-bold text-[var(--text-primary)] mb-1.5">
+              <h3 className="text-[length:var(--fs-card-title)] font-bold text-[var(--text-primary)] mb-1.5">
                 {project.title}
               </h3>
-              <p className="text-[var(--fs-body)] text-[var(--text-muted)] leading-relaxed mb-3">
+              <p className="text-[length:var(--fs-body)] text-[var(--text-muted)] leading-relaxed mb-3">
                 {project.description}
               </p>
             </div>

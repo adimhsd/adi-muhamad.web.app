@@ -23,13 +23,13 @@ export const projectsSection = {
       href: 'https://chat.adi-muhamad.my.id',
     },
     {
-      badge: 'HIBAH KOMPETITIF NASIONAL',
+      badge: 'AI ADAPTIVE LEARNING',
       badgeVariant: 'emerald',
-      title: 'CDL-Guru Adaptive AI',
+      title: 'CDL-Mahasiswa UNIKU Adaptive AI',
       description:
-        'Sistem AI-Based Adaptive Learning untuk Personalisasi Bias Informasi dalam Penguatan Critical Digital Literacy (CDL) Guru (TypeScript).',
-      linkLabel: 'github.com/adimhsd/cdl-guru',
-      href: 'https://github.com/adimhsd/cdl-guru',
+        'Platform Sistem AI-Based Adaptive Learning untuk Personalisasi Bias Informasi dalam Penguatan Critical Digital Literacy (CDL) Mahasiswa Universitas Kuningan.',
+      linkLabel: 'cdl.adi-muhamad.my.id',
+      href: 'https://cdl.adi-muhamad.my.id/',
     },
     {
       badge: 'ENTERPRISE WEB / PWA',

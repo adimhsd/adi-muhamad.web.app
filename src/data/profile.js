@@ -116,7 +116,7 @@ export const contactData = {
     { label: 'Blog Dosen Sontoloyo', href: 'https://blog.adi-muhamad.my.id/' },
     { label: 'ChatBot AI', href: 'https://chat.adi-muhamad.my.id/' },
     { label: 'Exam AI', href: 'https://exam.adi-muhamad.my.id/' },
-    { label: 'CDL-Guru AI', href: 'https://cdl.adi-muhamad.my.id/' },
+    { label: 'CDL Adaptive AI', href: 'https://cdl.adi-muhamad.my.id/' },
     { label: 'Pustaka Karya', href: 'https://pustakakarya-id.web.app/' },
     { label: 'GitHub', href: 'https://github.com/adimhsd' },
     { label: 'Google Scholar', href: 'https://scholar.google.com/citations?user=xc8MNfoAAAAJ&hl=id' },

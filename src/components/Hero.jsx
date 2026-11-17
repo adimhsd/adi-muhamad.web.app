@@ -70,11 +70,11 @@ export default function Hero() {
             <span>{profileData.personaTag}</span>
           </div>
 
-          <h1 className="text-[var(--fs-hero-name)] font-extrabold leading-tight tracking-tight mb-1.5 md:whitespace-nowrap text-[var(--text-primary)]">
+          <h1 className="text-[length:var(--fs-hero-name)] font-extrabold leading-tight tracking-tight mb-1.5 md:whitespace-nowrap text-[var(--text-primary)]">
             {profileData.fullName}
           </h1>
 
-          <ul className="list-none p-0 m-0 mb-2.5 flex flex-col items-center md:items-start gap-0.5 text-[var(--fs-hero-role)] text-[var(--text-secondary)] font-medium">
+          <ul className="list-none p-0 m-0 mb-2.5 flex flex-col items-center md:items-start gap-0.5 text-[length:var(--fs-hero-role)] text-[var(--text-secondary)] font-medium">
             {profileData.roles.map((role) => (
               <li
                 key={role.highlight}
@@ -92,7 +92,7 @@ export default function Hero() {
             {profileData.heroQuote}
           </p>
 
-          <p className="text-[var(--text-secondary)] text-[var(--fs-hero-bio)] leading-relaxed mb-4 max-w-[760px]">
+          <p className="text-[var(--text-secondary)] text-[length:var(--fs-hero-bio)] leading-relaxed mb-4 max-w-[760px]">
             {profileData.bioPrefix}
             <strong>{profileData.bioHighlight1}</strong>
             {profileData.bioMid1}
