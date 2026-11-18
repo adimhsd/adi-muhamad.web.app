@@ -53,7 +53,7 @@ export const businessSection = {
     badgeVariant: 'emerald',
     title: 'Peta Trader (peta-trader.id)',
     description:
-      'Salah satu founder dari platform Peta Trader (peta-trader.id). Terlibat dalam membangun visi produk dan ekosistem platform digital tersebut.',
+      'Salah satu founder dari platform Peta Trader (peta-trader.id). Terlibat dalam membangun visi produk dan ekosistem platform digital tersebut. Platform edukasi dan analisa saham berbasis metode BSS (Historical Statistic Analysis) Bersama komunitas BSS Saham Indonesia.',
     platformUrl: 'https://peta-trader.id/',
     platformLabel: 'Akses Platform peta-trader.id',
   },

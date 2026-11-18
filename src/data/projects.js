@@ -52,7 +52,7 @@ export const projectsSection = {
     {
       badge: 'SELF-HOSTED INFRASTRUCTURE',
       badgeVariant: 'indigo',
-      title: 'Home AI Lab (HomeServerAdi)',
+      title: 'Home AI Lab (Home Server)',
       description:
         'Infrastruktur klaster server pribadi berbasis Linux, Docker, dan Cloudflare Zero Trust Tunnel untuk eksperimen LLM lokal, AI Agent, dan layanan lainya menggunakan Proxmox VE.',
       linkLabel: 'Akses Chetshet',
