@@ -66,8 +66,25 @@ export default function BusinessEcosystem() {
       </div>
 
       {partnerVenture && (
-        <div className="mt-3.5 bg-[var(--bg-card)] border border-[var(--border-subtle)] hover:border-[var(--border-highlight)] rounded-xl p-4 md:p-5 shadow-[var(--shadow-card)] transition-colors flex flex-col md:flex-row md:items-center justify-between gap-3">
-          <div>
+        <div className="mt-3.5 bg-[var(--bg-card)] border border-[var(--border-subtle)] hover:border-[var(--border-highlight)] rounded-xl p-4 md:p-5 shadow-[var(--shadow-card)] transition-colors flex flex-col sm:flex-row items-center sm:items-start gap-4 md:gap-5">
+          <div className="flex flex-col items-center shrink-0 gap-2.5">
+            <div className="w-20 h-20 md:w-24 md:h-24 rounded-xl overflow-hidden bg-[var(--bg-tag)] border border-[var(--border-subtle)] p-1.5 flex items-center justify-center">
+              <img
+                src={partnerVenture.logoSrc || '/peta-trader.jpg'}
+                alt={partnerVenture.title}
+                className="w-full h-full object-contain"
+              />
+            </div>
+            <a
+              href={partnerVenture.platformUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white transition-colors whitespace-nowrap"
+            >
+              {partnerVenture.platformLabel || 'Akses Platform'} &rarr;
+            </a>
+          </div>
+          <div className="flex-1 text-center sm:text-left">
             <Badge variant={partnerVenture.badgeVariant}>{partnerVenture.badge}</Badge>
             <h3 className="text-[length:var(--fs-card-title)] font-bold text-[var(--text-primary)] mb-1">
               {partnerVenture.title}
@@ -75,16 +92,6 @@ export default function BusinessEcosystem() {
             <p className="text-[length:var(--fs-body)] text-[var(--text-muted)] leading-relaxed">
               {partnerVenture.description}
             </p>
-          </div>
-          <div className="flex flex-wrap items-center gap-3 shrink-0">
-            <a
-              href={partnerVenture.platformUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-xs md:text-sm font-semibold bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white transition-colors"
-            >
-              {partnerVenture.platformLabel} &rarr;
-            </a>
           </div>
         </div>
       )}

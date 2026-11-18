@@ -64,8 +64,6 @@ export const projectsSection = {
     badgeVariant: 'indigo',
     title: 'Private Home Server',
     description:
-      'Infrastruktur klaster server pribadi berbasis Linux, Docker, dan Cloudflare Zero Trust Tunnel untuk eksperimen LLM lokal, AI Agent, dan layanan lainya menggunakan Proxmox VE.',
-    linkLabel: 'Akses Chetshet',
-    href: 'https://community-scripts.org/',
+      'Perangkat komputer pribadi yang beroperasi di rumah untuk menyediakan penyimpanan terpusat, Backup data, streaming media, dan aplikasi mandiri (self-hosted) tanpa bergantung penuh pada layanan cloud komersial. Infrastruktur klaster server berbasis Linux, Docker, dan Cloudflare Zero Trust Tunnel untuk eksperimen LLM lokal, AI Agent, dan layanan lainya menggunakan Proxmox VE.',
   },
 };
