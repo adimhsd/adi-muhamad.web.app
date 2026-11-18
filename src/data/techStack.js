@@ -17,7 +17,7 @@ export const techStackSection = {
       badge: '🛠️ BACKEND',
       badgeVariant: 'indigo',
       title: 'Backend',
-      tools: 'Firebase, Node.js (basic)',
+      tools: 'Node.js, PHP, Laravel, PostgreSQL, MySQL, Firebase',
       description:
         'Backend sederhana yang mudah dirawat, cepat dikembangkan, dan cukup kuat untuk kebutuhan sistem skala kecil hingga menengah.',
     },
@@ -33,7 +33,7 @@ export const techStackSection = {
       badge: '🤖 AI & AUTOMATION',
       badgeVariant: 'amber',
       title: 'AI & Automation',
-      tools: 'Machine Learning (dasar), LLM APIs, n8n',
+      tools: 'Machine Learning, LLM APIs, 9 Router, n8n',
       description:
         'Mengembangkan fitur AI yang fokus pada kebutuhan nyata otomatisasi dan pengambilan keputusan, bukan pipeline yang ribet.',
     },
@@ -49,7 +49,7 @@ export const techStackSection = {
       badge: '☁️ CLOUD & INFRA',
       badgeVariant: 'indigo',
       title: 'Cloud & Infrastructure',
-      tools: 'DigitalOcean, Linux Server, VPS, Cloudflare',
+      tools: 'Home Server, Linux, VPS, Cloudflare, SSH',
       description:
         'Lingkungan server yang fleksibel untuk belajar, bereksperimen, dan menjalankan sistem secara mandiri.',
     },

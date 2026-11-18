@@ -11,7 +11,7 @@ export const profileData = {
   brandName: 'Adi Muhamad Muhsidi',
   fullName: 'Adi Muhamad Muhsidi, S.SI., M.Kom.',
   personaTag: '⚡ Dosen Sontoloyo',
-  statusText: 'Dosen & Praktisi AI Aktif',
+  statusText: 'Dosen & Praktisi IT',
   avatarSrc: '/avatar.jpg',
   avatarFallback: 'https://avatars.githubusercontent.com/u/59553339?v=4',
   roles: [

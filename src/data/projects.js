@@ -43,20 +43,20 @@ export const projectsSection = {
     {
       badge: 'DIGITALISASI UMKM',
       badgeVariant: 'cyan',
-      title: 'E-Catalogue AI & UMKM',
+      title: 'Landing Page & Web UMKM',
       description:
-        'Pengembangan sistem E-Catalogue berbasis AI dengan algoritma Content-Based Filtering serta portal digitalisasi UMKM lokal.',
+        'Pengembangan Company Profile dan Level Up Digitalisasi UMKM lokal dan lembaga pendidikan.',
       linkLabel: 'Lihat Repositori',
-      href: 'https://github.com/adimhsd/sambal-tempongburial',
+      href: 'https://github.com/adimhsd?tab=repositories&q=landing+page&type=&language=&sort=',
     },
     {
       badge: 'SELF-HOSTED INFRASTRUCTURE',
       badgeVariant: 'indigo',
       title: 'Home AI Lab (HomeServerAdi)',
       description:
-        'Infrastruktur klaster server pribadi berbasis Linux, Docker, dan Cloudflare Zero Trust Tunnel untuk eksperimen LLM lokal, AI Agent, dan layanan kampus.',
-      linkLabel: '103+ Repositori di GitHub',
-      href: 'https://github.com/adimhsd',
+        'Infrastruktur klaster server pribadi berbasis Linux, Docker, dan Cloudflare Zero Trust Tunnel untuk eksperimen LLM lokal, AI Agent, dan layanan lainya menggunakan Proxmox VE.',
+      linkLabel: 'Akses Chetshet',
+      href: 'https://community-scripts.org/',
     },
   ],
 };
