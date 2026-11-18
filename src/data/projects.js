@@ -32,6 +32,15 @@ export const projectsSection = {
       href: 'https://cdl.adi-muhamad.my.id/',
     },
     {
+      badge: 'SISTEM AKADEMIK & PPL',
+      badgeVariant: 'emerald',
+      title: 'Sistem Pemantauan & Penilaian PPL Terintegrasi',
+      description:
+        'Platform digital untuk pelaporan aktivitas jurnal harian (logbook), supervisi kunjungan DPL, serta evaluasi penilaian objektif bagi mahasiswa Manajemen, Akuntansi, dan Bisnis Digital FEB UNIKU.',
+      linkLabel: 'ppl.febuniku.dpdns.org',
+      href: 'https://ppl.febuniku.dpdns.org/',
+    },
+    {
       badge: 'ENTERPRISE WEB / PWA',
       badgeVariant: 'amber',
       title: 'Sistem Catering Al-Bahjah',
