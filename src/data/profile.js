@@ -118,7 +118,7 @@ export const contactData = {
     { label: 'ChatBot AI', href: 'https://chat.adi-muhamad.my.id/' },
     { label: 'Exam AI', href: 'https://exam.adi-muhamad.my.id/' },
     { label: 'CDL Adaptive AI', href: 'https://cdl.adi-muhamad.my.id/' },
-    { label: 'Sistem PPL FEB UNIKU', href: 'https://ppl.febuniku.dpdns.org/' },
+    { label: 'Sistem Monitoring PPL FEB', href: 'https://ppl.febuniku.dpdns.org/' },
     { label: 'Pustaka Karya', href: 'https://pustakakarya-id.web.app/' },
     { label: 'Peta Trader', href: 'https://peta-trader.id/' },
     { label: 'Founders Peta Trader', href: 'https://peta-trader.id/founders' },

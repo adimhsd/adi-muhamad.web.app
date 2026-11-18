@@ -36,6 +36,7 @@ export const expertiseSection = {
     },
   ],
   quoteBanner: {
+    tagline: 'Filosofi Hidup',
     quote:
       '“Jika kamu berbuat baik, maka kamu bisa memimpin. Jika kamu tidak membutuhkan orang lain maka kamu akan setara. Jika kamu membutuhkan seseorang, maka kamu akan menjadi budak.”',
     attribution: '— Sayyidina Ali bin Abi Thalib RA',

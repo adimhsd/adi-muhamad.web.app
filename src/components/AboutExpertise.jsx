@@ -37,6 +37,9 @@ export default function AboutExpertise() {
       </div>
 
       <div className="mt-4 rounded-xl border border-[var(--border-subtle)] bg-[image:var(--bg-quote)] p-4 md:p-5">
+        <div className="font-mono text-[0.7rem] md:text-xs font-bold uppercase tracking-wider text-[var(--accent-cyan)] mb-2">
+          {quoteBanner.tagline || 'Filosofi Hidup'}
+        </div>
         <blockquote className="text-[0.82rem] md:text-base italic font-medium text-[var(--text-primary)] leading-relaxed mb-1.5">
           {quoteBanner.quote}
         </blockquote>

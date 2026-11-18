@@ -34,7 +34,7 @@ export const projectsSection = {
     {
       badge: 'SISTEM AKADEMIK & PPL',
       badgeVariant: 'emerald',
-      title: 'Sistem Pemantauan & Penilaian PPL Terintegrasi',
+      title: 'Sistem Monitoring PPL FEB',
       description:
         'Platform digital untuk pelaporan aktivitas jurnal harian (logbook), supervisi kunjungan DPL, serta evaluasi penilaian objektif bagi mahasiswa Manajemen, Akuntansi, dan Bisnis Digital FEB UNIKU.',
       linkLabel: 'ppl.febuniku.dpdns.org',
@@ -58,14 +58,14 @@ export const projectsSection = {
       linkLabel: 'Lihat Repositori',
       href: 'https://github.com/adimhsd?tab=repositories&q=landing+page&type=&language=&sort=',
     },
-    {
-      badge: 'SELF-HOSTED INFRASTRUCTURE',
-      badgeVariant: 'indigo',
-      title: 'Home AI Lab (Home Server)',
-      description:
-        'Infrastruktur klaster server pribadi berbasis Linux, Docker, dan Cloudflare Zero Trust Tunnel untuk eksperimen LLM lokal, AI Agent, dan layanan lainya menggunakan Proxmox VE.',
-      linkLabel: 'Akses Chetshet',
-      href: 'https://community-scripts.org/',
-    },
   ],
+  featuredProject: {
+    badge: 'SELF-HOSTED INFRASTRUCTURE',
+    badgeVariant: 'indigo',
+    title: 'Private Home Server',
+    description:
+      'Infrastruktur klaster server pribadi berbasis Linux, Docker, dan Cloudflare Zero Trust Tunnel untuk eksperimen LLM lokal, AI Agent, dan layanan lainya menggunakan Proxmox VE.',
+    linkLabel: 'Akses Chetshet',
+    href: 'https://community-scripts.org/',
+  },
 };
