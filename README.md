@@ -4,9 +4,9 @@
   <img src="public/avatar.jpg" alt="Adi Muhamad Muhsidi, S.SI., M.Kom." width="150" />
 </p>
 
-Repositori ini berisi kode sumber **Landing Page Profesional, CV Digital, dan Portofolio Akademik × Teknologi** milik **Adi Muhamad Muhsidi, S.SI., M.Kom.** ([adi-muhamad.my.id](https://adi-muhamad.my.id/)).
+Repositori ini berisi kode sumber **Landing Page Profesional, CV Digital, dan Portofolio Akademik × Teknologi** milik **Adi Muhamad Muhsidi, S.SI., M.Kom.** ([adi-muhamad.web.app](https://adi-muhamad.web.app/)).
 
-Proyek ini telah di-*refactor* dari halaman HTML tunggal menjadi aplikasi web modern berbasis **React + Vite + Tailwind CSS** dengan desain **Ubuntu Yaru Theme** (*Light* & *Dark Mode*) dan di-deploy secara otomatis melalui **Cloudflare Pages**.
+Proyek ini dibangun sebagai aplikasi web modern berbasis **React + Vite + Tailwind CSS** dengan desain **Ubuntu Yaru Theme** (*Light* & *Dark Mode*) dan di-deploy menggunakan **Firebase Hosting**.
 
 ---
 
@@ -16,14 +16,14 @@ Proyek ini telah di-*refactor* dari halaman HTML tunggal menjadi aplikasi web mo
 - **Build Tool:** Vite 7
 - **Styling:** Tailwind CSS v3 (`darkMode: 'class'`) + Ubuntu Yaru CSS Variables ([style-ubuntu.md](style-ubuntu.md))
 - **Tipografi:** Google Fonts (`Ubuntu` & `Ubuntu Mono`)
-- **Hosting & CI/CD:** Cloudflare Pages (terhubung ke GitHub)
+- **Hosting:** Firebase Hosting ([adi-muhamad.web.app](https://adi-muhamad.web.app/))
 
 ---
 
 ## 2. Struktur Proyek
 
 ```text
-lp-adi-muhamad.my.id/
+adi-muhamad.web.app/
 ├── public/
 │   ├── avatar.jpg                 # Foto profil resmi, favicon, & Open Graph image
 │   └── robots.txt                 # Konfigurasi indexing mesin pencari
@@ -50,6 +50,8 @@ lp-adi-muhamad.my.id/
 │   ├── App.jsx                    # Root komponen & manajemen tema (localStorage)
 │   ├── index.css                  # Direktif Tailwind & token CSS Ubuntu Yaru
 │   └── main.jsx                   # Entry point React
+├── .firebaserc                    # Mapping Firebase Project ID (adimhsd-28)
+├── firebase.json                  # Konfigurasi Firebase Hosting (site, public, rewrites)
 ├── index.html                     # Entry HTML Vite + SEO meta, Open Graph & JSON-LD
 ├── PROFIL-LENGKAP-ADI.md          # Catatan lengkap profil, SINTA, Scholar & karya
 ├── style-ubuntu.md                # Panduan desain sistem Ubuntu Yaru
@@ -79,12 +81,28 @@ npm run preview
 
 ---
 
-## 4. Konfigurasi Deployment Cloudflare Pages
+## 4. Konfigurasi & Deployment Firebase Hosting
 
-Setiap kali ada *push* ke branch utama di GitHub, Cloudflare Pages akan otomatis membangun dan mempublikasikan proyek dengan pengaturan berikut:
+Proyek ini di-deploy ke **Firebase Hosting** dengan konfigurasi berikut (tersimpan pada `.firebaserc` dan `firebase.json`):
 
 | Pengaturan | Nilai |
 | :--- | :--- |
-| **Framework preset** | `Vite` (atau `None`) |
+| **Firebase Project ID** | `adimhsd-28` |
+| **Hosting Site** | `adi-muhamad` |
+| **Hosting URL** | `https://adi-muhamad.web.app/` |
 | **Build command** | `npm run build` |
-| **Build output directory** | `dist` |
+| **Public directory** | `dist` |
+| **SPA Rewrite** | `**` → `/index.html` |
+
+### Langkah Deploy Manual
+
+```bash
+# 1. Login ke Firebase CLI (jika belum login)
+npx firebase-tools login
+
+# 2. Build aplikasi untuk produksi
+npm run build
+
+# 3. Deploy ke Firebase Hosting
+npx firebase-tools deploy --only hosting
+```
